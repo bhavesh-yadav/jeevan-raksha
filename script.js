@@ -5,9 +5,7 @@ window.onload = function () {
   var upazilaSelect = document.getElementById("upazila");
 
   var countryData = "./json/bdinfo.json"
-  // var countryData =
-  //   "https://gist.githubusercontent.com/dizaraj/7a8a4b51c6c4dfe3400dc3203f7025fe/raw/bdinfo.json";
-    
+
   fetch(countryData)
     .then((response) => response.json())
     .then((data) => {
